@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"app.js",
-    "dev":"nodemon app.js"
+    "start": "app.js",
+    "dev": "nodemon app.js"
   },
   "author": "junais",
   "license": "ISC",
@@ -27,6 +27,7 @@
     "mongoose": "^8.7.1"
   },
   "devDependencies": {
+    "@vercel/node": "^3.2.23",
     "nodemon": "^3.1.7"
   }
 }
