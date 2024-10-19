@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
+    <script type="text/javascript" defer src="js/main.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <h1 class="author__heading">junais musthafa</h1>
+        <p   class="author__body">MERN Stack developer | Data Scientist</p>
+
+    </div>
+    <div><img src="/images/space.jpeg" alt="personlooking" class="heroimage"></div>
+    <section class="articles">
+        <h2 class="articles_heading"> Latest Posts</h2>
+        <ul class="articles-ul">
+            <% data.forEach(post => { %>
+             
+           
+            <li>
+                <a href="/post/<%= post._id %>" >
+                    <span><%= post.title %></span>
+                    <span class="date"><%= post.createdAt.toDateString()%></span>
+
+                </a>
+            </li>
+            <% }) %>
+        </ul>
+
+        <% if(nextPage !==null) { %>
+         
+       
+        <a href="/?page=<%= nextPage %>" class="old_posts">&lt;view older posts</a>
+        <% } %>
+    </section>
+</body>
+</html>

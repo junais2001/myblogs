@@ -1,0 +1,140 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Admin Title Section */
+.admin-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.admin-title h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.admin-title .button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-title .button:hover {
+    background-color: #218838;
+}
+
+/* Admin Post List */
+.admin-post {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.admin-post li {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-post a {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.admin-post a:hover {
+    color: #007BFF;
+}
+
+/* Post Controls */
+.admin-post-controles {
+    display: flex;
+    gap: 10px;
+}
+
+/* Buttons inside controls */
+.admin-post-controles .btn {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-post-controles .btn:hover {
+    background-color: #0056b3;
+}
+
+.admin-post-controles form {
+    display: inline;
+}
+
+.admin-post-controles input[type="submit"] {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.admin-post-controles input[type="submit"]:hover {
+    background-color: #c82333;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .admin-post li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .admin-post a {
+        margin-bottom: 10px;
+    }
+
+    .admin-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .admin-title h2 {
+        margin-bottom: 10px;
+    }
+}
